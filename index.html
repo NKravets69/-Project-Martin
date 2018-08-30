@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="../Проэкт 1 Martin/Java Script/jquery-2.2.3.min.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="wrapp-glass" class="wrapper-cover"></div>
+        <main class="banners-grid">
+            <section class="banners-grid-1">
+                <section class="banners-grid1-left">
+                    <header>
+                        <h1>IAM MARTIN</h1>
+                        <p>WEB & UI DEVELOPER</p>
+                    </header>
+                    <div class="socials">
+                        <ul>
+                            <li>
+                                <a href="" class="fab fa-facebook-f"></a>
+                            </li>
+                            <li>
+                                <a href="" class="fab fa-twitter"></a>
+                            </li>
+                            <li>
+                                <a href="" class="fab fa-google-plus-g"></a>
+                            </li>
+                            <li>
+                                <a href="" class="fab fa-dribbble"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="banners-grid1-right">
+                    <header>
+                        <h3>About
+                            <span>me</span>
+                        </h3>
+                    </header>
+                    <div class="agile-block">
+                        <div class="agile-info">
+                            <div class="agile-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="agile-text">
+                                <h4>WEB DEVELOPER</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="agile-info">
+                            <div class="agile-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div class="agile-text">
+                                <h4>GRAPHIC DESIGNER</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                        <div class="agile-info">
+                            <div class="agile-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <div class="agile-text">
+                                <h4>UI/UK DEVELOPER</h4>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="banners-grid-2">
+                <section class="banners-grid2-left">
+                    <i class="fas fa-code grid2-icon"></i>
+                    <header>
+                        <h3>
+                            <label for="chkx-skills" onclick="doWrap()">SKILLS</label>
+                        </h3>
+                    </header>
+                    <input type="checkbox" id="chkx-skills">
+                    <div class="pop-up pop-up-skills">
+                        <div class="label-close">
+                            <label for="chkx-skills" onclick="undoWrap()">×</label>
+                        </div>
+                        <div class="ancSkills">
+                            <div class="charts">
+                                <h3 class="pop-up-header">
+                                    <span>my</span> Skills</h3>
+                                <div class="gauges">
+                                    <div class="gauge-block">
+                                        <canvas id="gauge1" width="200" height="100"></canvas>
+                                        <h4>java script</h4>
+                                    </div>
+                                    <div class="gauge-block">
+                                        <canvas id="gauge2" width="200" height="100"></canvas>
+                                        <h4>jquery</h4>
+                                    </div>
+                                    <div class="gauge-block">
+                                        <canvas id="gauge3" width="200" height="100"></canvas>
+                                        <h4>php</h4>
+                                    </div>
+                                    <div class="gauge-block">
+                                        <canvas id="gauge4" width="200" height="100"></canvas>
+                                        <h4>java</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ancKnowledge">
+                            <h3 class="pop-up-header"> my
+                                <span>Knowledge</span>
+                            </h3>
+                            <div class="progress">
+                                <div class="progress-bar">
+                                    <h6>Editing
+                                        <span>95%</span>
+                                    </h6>
+                                    <div class="edit-bar bar">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <h6>Developing
+                                        <span>85%</span>
+                                    </h6>
+                                    <div class="dev-bar bar">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <h6>Creativity
+                                        <span>90%</span>
+                                    </h6>
+                                    <div class="creat-bar bar">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <h6>Professional
+                                        <span>86%</span>
+                                    </h6>
+                                    <div class="prof-bar bar">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="banners-grid2-center">
+                    <i class="fas fa-edit grid2-icon"></i>
+                    <header>
+                        <h3>
+                            <label for="chkx-works" onclick="doWrap()">WORKS</label>
+                        </h3>
+                    </header>
+                    <input type="checkbox" id="chkx-works">
+                    <div class="pop-up pop-up-works">
+                        <div class="label-close">
+                            <label for="chkx-works" onclick="undoWrap()">×</label>
+                        </div>
+                        <h3 class="pop-up-header"> my
+                            <span>Projects</span>
+                        </h3>
+                        <div class="gallery-works">
+                            <div class="project">
+                                <img src="img/p1.jpg" alt="">
+                                <a href="#myModal">projects</a>
+                                <div id="myModal">
+                                    <div class="modal-container ">
+                                        <div class="modal-head">
+                                            <a href="#">×</a>
+                                            <h4>my
+                                                <span>projects</span>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/p1.jpg" alt="">
+                                            <p> Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac
+                                                rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu
+                                                facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in
+                                                dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam
+                                                id metus id tellus ultrices ullamcorper. Cras tempor massa luctus, varius
+                                                lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+                                                sed finibus sem
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="img/p2.jpg" alt="">
+                                <a href="#myModal2">projects</a>
+                                <div id="myModal2">
+                                    <div class="modal-container">
+                                        <div class="modal-head">
+                                            <a href="#">×</a>
+                                            <h4>my
+                                                <span>projects</span>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/p2.jpg" alt="">
+                                            <p> Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac
+                                                rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu
+                                                facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in
+                                                dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam
+                                                id metus id tellus ultrices ullamcorper. Cras tempor massa luctus, varius
+                                                lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+                                                sed finibus sem
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="img/p3.jpg" alt="">
+                                <a href="#myModal3">projects</a>
+                                <div id="myModal3">
+                                    <div class="modal-container">
+                                        <div class="modal-head">
+                                            <a href="#">×</a>
+                                            <h4>my
+                                                <span>projects</span>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/p3.jpg" alt="">
+                                            <p> Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac
+                                                rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu
+                                                facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in
+                                                dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam
+                                                id metus id tellus ultrices ullamcorper. Cras tempor massa luctus, varius
+                                                lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+                                                sed finibus sem
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="img/p4.jpg" alt="">
+                                <a href="#myModal4">projects</a>
+                                <div id="myModal4">
+                                    <div class="modal-container ">
+                                        <div class="modal-head">
+                                            <a href="#">×</a>
+                                            <h4>my
+                                                <span>projects</span>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/p4.jpg" alt="">
+                                            <p> Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac
+                                                rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu
+                                                facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in
+                                                dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam
+                                                id metus id tellus ultrices ullamcorper. Cras tempor massa luctus, varius
+                                                lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+                                                sed finibus sem
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="img/p5.jpg" alt="">
+                                <a href="#myModal5">projects</a>
+                                <div id="myModal5">
+                                    <div class="modal-container ">
+                                        <div class="modal-head">
+                                            <a href="#">×</a>
+                                            <h4>my
+                                                <span>projects</span>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/p5.jpg" alt="">
+                                            <p> Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac
+                                                rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu
+                                                facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in
+                                                dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam
+                                                id metus id tellus ultrices ullamcorper. Cras tempor massa luctus, varius
+                                                lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+                                                sed finibus sem
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="img/p6.jpg" alt="">
+                                <a href="#myModal6">projects</a>
+                                <div id="myModal6">
+                                    <div class="modal-container ">
+                                        <div class="modal-head">
+                                            <a href="#">×</a>
+                                            <h4>my
+                                                <span>projects</span>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/p6.jpg" alt="">
+                                            <p> Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac
+                                                rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu
+                                                facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in
+                                                dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam
+                                                id metus id tellus ultrices ullamcorper. Cras tempor massa luctus, varius
+                                                lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+                                                sed finibus sem
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="img/p7.jpg" alt="">
+                                <a href="#myModal7">projects</a>
+                                <div id="myModal7">
+                                    <div class="modal-container ">
+                                        <div class="modal-head">
+                                            <a href="#">×</a>
+                                            <h4>my
+                                                <span>projects</span>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/p7.jpg" alt="">
+                                            <p> Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac
+                                                rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu
+                                                facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in
+                                                dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam
+                                                id metus id tellus ultrices ullamcorper. Cras tempor massa luctus, varius
+                                                lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+                                                sed finibus sem
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="img/p8.jpg" alt="">
+                                <a href="#myModal8">projects</a>
+                                <div id="myModal8">
+                                    <div class="modal-container ">
+                                        <div class="modal-head">
+                                            <a href="#">×</a>
+                                            <h4>my
+                                                <span>projects</span>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="img/p8.jpg" alt="">
+                                            <p> Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac
+                                                rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu
+                                                facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in
+                                                dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam
+                                                id metus id tellus ultrices ullamcorper. Cras tempor massa luctus, varius
+                                                lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+                                                sed finibus sem
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="banners-grid2-right">
+                    <i class="fas fa-map-marker-alt grid2-icon"></i>
+                    <header>
+                        <h3>
+                            <label for="chkx-contact" onclick="doWrap()">CONTACT</label>
+                        </h3>
+                    </header>
+                    <input type="checkbox" id="chkx-contact">
+                    <div class="pop-up pop-up-contact">
+                        <div class="label-close">
+                            <label for="chkx-contact" onclick="undoWrap()">×</label>
+                        </div>
+                        <div class="contact-form">
+                            <h3 class="pop-up-header">contact</h3>
+                            <form action="" id="contact">
+                                <div class="contact-container">
+                                    <div class="input-credentials">
+                                        <div class="input-cred">
+                                            <label for="">FULL-NAME:</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="input-cred">
+                                            <label for="">PHONE NUMBER:</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                        <div class="input-cred">
+                                            <label for="">EMAIL ADDRESS:</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="message-block">
+                                        <label for="">message</label>
+                                        <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+
+                                    </div>
+                                    <button>Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="map"></div>
+                        <footer>
+                            <div class="footer-container">
+                                <div class="agile-footer-container">
+                                    <h2>
+                                        <a href="./index.html">HIREME</a>
+                                    </h2>
+                                    <p>Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non consectetur adipiscing
+                                        elit.
+                                    </p>
+                                    <div class="socials">
+                                        <ul>
+                                            <li>
+                                                <a href="" class="fab fa-facebook-f"></a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="fab fa-twitter"></a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="fab fa-google-plus-g"></a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="fab fa-dribbble"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="agile-footer-top">
+                                        <ul class="footer-address">
+                                            <li>
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span>Melbourne St, QLD 4101,<br> Australia.</span>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-phone-volume"></i>
+                                                <span>+1234 567 567 
+                                                    <br>&nbsp&nbsp +1567 567 234</span>
+                                            </li>
+                                            <li>
+                                                <i class="far fa-envelope"></i>
+                                                <span><a href="mailto:info@example.com">info@example1.com</a> 
+                                                    <br>
+                                                     <a href="mailto:info@example.com">info@example2.com</a> 
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <i class="far fa-comments"></i>
+                                                <span><a href="#contact">Contact </a></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bottom-footer">
+                                    <P>© 2018 Connect CV. All Rights Reserved | Design by
+                                        <a href="./index.html">W3layouts</a>
+                                    </P>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </section>
+            </section>
+
+        </main>
+    </div>
+    <script src="../Проэкт 1 Martin/Java Script/jquery.gauge.js"></script>
+    <script>
+        function doWrap() {
+            document.getElementById("wrapp-glass").className = "wrapper-cover-y";
+        }
+        function undoWrap() {
+            document.getElementById("wrapp-glass").className = "wrapper-cover";
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#gauge1").gauge(30, { color: "#fb5710", unit: " %", type: "halfcircle" });
+            $("#gauge2").gauge(70, { color: "#a821e7", unit: " %", type: "halfcircle" });
+            $("#gauge3").gauge(75, { color: "#fbb810", unit: " %", type: "halfcircle" });
+            $("#gauge4").gauge(90, { color: "#21d0e7", unit: " %", type: "halfcircle" });
+        });
+    </script>
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("map"), mapProp);
+        }
+    </script> 
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+
+</html>
